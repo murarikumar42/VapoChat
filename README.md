@@ -44,30 +44,3 @@ $ npm start
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-
-## App screenshots
-
-1. **Welcome Page**
-
- ![App Screenshot](readme-screenshot/Screenshot1.png)
-
-2. **Login Page**
-
- ![App Screenshot](readme-screenshot/Screenshot2.png)
-
-
-3. **Home Page**
-
- ![App Screenshot](readme-screenshot/Screenshot3.png)
-
- 4. **Profile Page**
-
- ![App Screenshot](readme-screenshot/Screenshot4.png)
-
-5. **Friends Page**
-
- ![App Screenshot](readme-screenshot/Screenshot5.png)
-
-6. **Log Page**
-
- ![App Screenshot](readme-screenshot/Screenshot6.png)
