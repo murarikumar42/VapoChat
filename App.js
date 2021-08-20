@@ -1,13 +1,39 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
+import LoginScreen from './screen/LoginScreen';
+import { createStackNavigator } from '@react-navigation/stack';
+import RegisterScreen from './screen/RegisterScreen';
+import HomeScreen from './screen/HomeScreen';
+import AddChatScreen from './screen/AddChatScreen';
+import ChatScreen from './screen/ChatScreen';
 
+const Stack=createStackNavigator();
+
+const globalScreenOptions={
+  headerStyle:{backgroundColor:"#2c6bed"},
+  headerTitleStyle:{color:"white"},
+  headerTintColor:"white",
+}
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator 
+      //initialRouteName="Home" 
+      screenOptions={globalScreenOptions}>
+      <Stack.Screen
+        options={{
+          title:"VapoChat | Sign In"
+        }}
+        name='Login' component={LoginScreen}/>
+        <Stack.Screen name='Register' component={RegisterScreen}/>
+        <Stack.Screen name='Home' component={HomeScreen}/>
+        <Stack.Screen name="AddChat" component={AddChatScreen}/>
+        <Stack.Screen name="chat" component={ChatScreen}/>
+      </Stack.Navigator>
+     
+    </NavigationContainer>
   );
 }
 
