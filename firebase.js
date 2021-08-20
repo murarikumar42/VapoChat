@@ -3,12 +3,12 @@ import 'firebase/firestore';
 import "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA1DZHHtkBMsLJkhy4VE0NeEnSoXwZGHVo",
+  apiKey: "Enter_firebase_apikey",
   authDomain: "vapochat-build.firebaseapp.com",
   projectId: "vapochat-build",
   storageBucket: "vapochat-build.appspot.com",
-  messagingSenderId: "216374402681",
-  appId: "1:216374402681:web:996f5b93ed6e9fb6133ea8"
+  messagingSenderId: "Enter_message_senderid",
+  appId: "Enter_app_id"
 };
 
   let app;
