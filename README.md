@@ -14,7 +14,15 @@ This project is deployed on firebase: [VapoChat](https://vapochat-build.web.app/
 
 
 ## Start the app
-
+Update firebase properties in `VapoChat/firebase.js`:
+```bash
+  apiKey: "Enter_firebase_api_key",
+  authDomain: "Enter_domain_name",
+  projectId: "Enter_project_id",
+  storageBucket: "Enter_storage_bucket_id",
+  messagingSenderId: "Enter_message_sender_id",
+  appId: "Enter_app_id"
+```
 To start the app you need to enter the `VapoChat` folder:
 
 ```bash
@@ -34,22 +42,6 @@ $ npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-#### 2. Start the Server
-
-Go to the root directory of the Spring Boot app:
-
-```bash
-$ cd Besocial/Server
-```
-
-Start the Server:
-
-```bash
-$ mvn spring-boot:run
-```
-The Server is running on port `8000`.
-
 
 
 
